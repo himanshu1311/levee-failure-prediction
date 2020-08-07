@@ -23,12 +23,12 @@ river is borrow pit or NOT, meander indicates Meander location (1=Inside bend, 2
 4=forest), veg_buffer is the vegetation buffer width, dredging is the dredging intensity, and
 revertment is bank revetement.
 
-<img src="Images/1.jpg" >
+<img src="Images/1.png" >
 
 #### PLOT
 The plot below depicts the correlation among the predictor variables.
 
-<img src="Images/2.jpg" >
+<img src="Images/2.png" >
 
 From the above plot it is quite evident that the data is not heavily correlated.
 
@@ -58,35 +58,35 @@ are selected, written alongside with their coefficients-
 
 Now we’ll initialize the model and run the MCMC sampler :
 
-<img src="Images/3.jpg" >
+<img src="Images/3.png" >
 
 Using Bernoulli likelihood, with normal prior on the coefficients of logit function, with 1,000 Burn-in
 iterations and 30,000 total iterations for 3 chains, we get the following autocorrelation diagnostics.
 
-<img src="Images/4.jpg" >
+<img src="Images/4.png" >
 
 Here, we can see that not all the parameters have converged, giving following sample size :
 
-<img src="Images/5.jpg" >
+<img src="Images/5.png" >
 
 However, we are interested in means of these coefficients which are :
 
-<img src="Images/6.jpg" >
+<img src="Images/6.png" >
 
 The scatter plot of predicted values vs actual outcome shown below gives a rough idea of how
 successful the model is :
 
-<img src="Images/7.jpg" >
+<img src="Images/7.png" >
 
 ### RESULT
 After optimization, the model accuracy becomes maximum at a threshold of 0.4.
 For Training dataset :                  
 
-<img src="Images/8.jpg" >
+<img src="Images/8.png" >
 
  71.93% For Test dataset : 60%
  
- <img src="Images/9.jpg" >
+ <img src="Images/9.png" >
  
  ### CONCLUSION
  The logistic model is used to model the probability of a certain class or event existing, such as
